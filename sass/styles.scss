@@ -1,5 +1,6 @@
 // Resets, Clearfix, etc
 // import reset and clearfix
+@import "partials/reset";
 
 // Variables
 $dark: #222;
@@ -9,7 +10,7 @@ $padding: 20px;
 
 
 // Media Query Ranges
-$medium: "only screen and (min-width: 600px)";
+$medium: "only screen and (min-width: 600px) and (max-width:899px)";
 $large: "only screen and (min-width: 900px)";
 
 
@@ -25,6 +26,16 @@ body{
   background-color: $highlight;
   text-align: center;
   color: $light;
+
+  @media #{$large} {
+
+    background-color: #222;
+  }
+
+  /*@media #{$medium} {
+
+    background-color: orange;
+  }*/
 }
 
 h1, h2, h3, h4{
@@ -33,23 +44,81 @@ h1, h2, h3, h4{
 
 h1{
   padding: $padding;
+  font-size: 55px;
+  color: black;
+
+  @media #{$large} {
+
+    color:orange;
+
+  }
+
+  /*@media #{$medium} {
+
+    color: white;
+  }*/
 }
 
 h2{
 
+  font-size: 35px;
+
+  @media #{$large}{
+
+    background-color: orange;
+    color: black;
+  }
+
+  @media #{$medium} {
+
+    /*background-color: orange;*/
+    color: orange;
+  }
 }
 
-h2 {
-    color: blue;
+ul {
+
+  @media #{$large} {
+
+    max-width: 800px;
+  }
+
+  /*@media #{$medium} {
+
+    max-width: 500px;
+  }*/
+
 }
 
 .block_family{
   max-width:350px;
   margin:auto;
+  /*background-color: pink;*/
+  @media #{$large} {
+
+    max-width: 800px;
+  }
+
+  @media #{$medium} {
+
+    max-width: 500px;
+  }
 }
 
 .block_family li{
   background-color: $dark;
   margin-bottom: $padding;
   padding: $padding;
+
+  @media #{$large} {
+
+    background-color: orange;
+
+  }
+
+  @media #{$medium} {
+
+    background-color: white;
+
+  }
 }
