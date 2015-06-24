@@ -94,7 +94,6 @@ h2 {
   font-size: 35px; }
   @media only screen and (min-width: 900px) {
     h2 {
-      background-color: orange;
       color: black; } }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
     h2 {
@@ -131,10 +130,14 @@ ul {
     .block_family li {
       background-color: orange;
       width: 32%;
-      float: left; } }
+      float: left; }
+      .block_family li:nth-child(3n+2) {
+        background-color: white; } }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
     .block_family li {
       background-color: white;
       float: left;
       width: 49%;
-      margin: 0.5%; } }
+      margin: 0.5%; }
+      .block_family li:nth-child(2n+1) {
+        background-color: black; } }
