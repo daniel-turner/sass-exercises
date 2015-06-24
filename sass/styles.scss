@@ -1,0 +1,55 @@
+// Resets, Clearfix, etc
+// import reset and clearfix
+
+// Variables
+$dark: #222;
+$light: #EEE;
+$highlight: orange;
+$padding: 20px;
+
+
+// Media Query Ranges
+$medium: "only screen and (min-width: 600px)";
+$large: "only screen and (min-width: 900px)";
+
+
+// Mixins
+@mixin block_font($block_font_size: 25px, $block_font_color: $dark){
+  font-size: $block_font_size;
+  color: $block_font_color;
+}
+
+
+// Styles
+body{
+  background-color: $highlight;
+  text-align: center;
+  color: $light;
+}
+
+h1, h2, h3, h4{
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+h1{
+  padding: $padding;
+}
+
+h2{
+
+}
+
+h2 {
+    color: blue;
+}
+
+.block_family{
+  max-width:350px;
+  margin:auto;
+}
+
+.block_family li{
+  background-color: $dark;
+  margin-bottom: $padding;
+  padding: $padding;
+}
