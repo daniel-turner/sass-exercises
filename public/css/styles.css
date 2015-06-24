@@ -82,14 +82,13 @@ h1, h2, h3, h4 {
 h1 {
   padding: 20px;
   font-size: 55px;
-  color: black;
-  /*@media only screen and (min-width: 600px) and (max-width:899px) {
-
-    color: white;
-  }*/ }
+  color: black; }
   @media only screen and (min-width: 900px) {
     h1 {
       color: orange; } }
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    h1 {
+      color: white; } }
 
 h2 {
   font-size: 35px; }
@@ -125,10 +124,17 @@ ul {
 .block_family li {
   background-color: #222;
   margin-bottom: 20px;
-  padding: 20px; }
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0.66%; }
   @media only screen and (min-width: 900px) {
     .block_family li {
-      background-color: orange; } }
+      background-color: orange;
+      width: 32%;
+      float: left; } }
   @media only screen and (min-width: 600px) and (max-width: 899px) {
     .block_family li {
-      background-color: white; } }
+      background-color: white;
+      float: left;
+      width: 49%;
+      margin: 0.5%; } }

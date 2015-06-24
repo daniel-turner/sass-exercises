@@ -53,10 +53,10 @@ h1{
 
   }
 
-  /*@media #{$medium} {
+  @media #{$medium} {
 
     color: white;
-  }*/
+  }
 }
 
 h2{
@@ -109,16 +109,25 @@ ul {
   background-color: $dark;
   margin-bottom: $padding;
   padding: $padding;
+  box-sizing: border-box;
+  margin: 0.66%;
+
 
   @media #{$large} {
 
     background-color: orange;
+
+    width: 32%;
+    float: left;
+
 
   }
 
   @media #{$medium} {
 
     background-color: white;
-
+    float: left;
+    width: 49%;
+    margin: 0.5%;
   }
 }
